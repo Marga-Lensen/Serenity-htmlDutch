@@ -1,0 +1,66 @@
+      /* Global Styles */
+      body {
+        position: relative;
+        background-color: #b1cead;
+        background-image: url("https://cdn-desktop-ap-media.osp.opera.software/images/f5b660eb-bf0d-11ef-825e-97b1a23d271e/1734726269162/sample_0.jpg");
+        background-size: cover; /* Fill screen */
+        background-size: contain;
+        background-position: center;
+        background-attachment: fixed; /* Anchors background */
+        background-repeat: no-repeat;
+        font-family: "Palatino", serif;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Prevents scrolling on small screens */
+      }
+
+      /* Navbar Styles */
+      .navbar {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 10px;
+        border-radius: 10px;
+      }
+      
+      .nav-link img {
+        width: 50px;
+        height: auto;
+        cursor: pointer;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        padding: 5px;
+        transition: border-color 0.3s;
+      
+        &:hover {
+          border-color: #555;
+        }
+      }
+    .active {
+      border-color: #7c731e;
+      color: brown;
+    }  
+  
+  .card {
+    background-color: #e1f4d7;
+    background-color: '#b1cead';
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10vh;
+    width: 44vw;
+    position: fixed;
+    top: 10vh;
+    left: 50vw;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.6em;
+    font-size: 1.4em;
+  }
+.card h2 {
+  margin-bottom: 2rem;
+}
