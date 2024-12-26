@@ -10,9 +10,9 @@
         position: relative;
         background-color: #b1cead;
         background-image: url("https://cdn-desktop-ap-media.osp.opera.software/images/f5b660eb-bf0d-11ef-825e-97b1a23d271e/1734726269162/sample_0.jpg");
-        background-image: url(./sample_0.jpg);
+        /* background-image: url(./sample_0.jpg); */
         background-size: cover; /* Fill screen */
-        /* background-size: contain; */
+        background-size: contain;
         background-position: center;
         background-attachment: fixed; /* Anchors background */
         background-repeat: no-repeat;
@@ -31,21 +31,22 @@
         position: relative; /* No fixed position */
         /* aus letzter Version copy 3:  */
         position: fixed; /* Keeps the card fixed on the background */
-        top: 44%; /* Center vertically */
-        left: 62%;
+        top: 35%; /* Center vertically */
+        left: 72%;
         right: 10%;
         transform: translate(-50%, -50%); /* Adjust position to center */
         /*  */
-        color: #220404;
+        color: #210202b6;
         
         background-color: rgba(240, 247, 235, 0.9); /* Semi-transparent */
         background-color: rgba(182, 187, 187, 0.67); /* Semi-transparent */
         /* aus letzter Version copy 3:  */
-        /* background-color: #f0f7eb !important;Light green */
-        /* opacity: 1 !important; */
+        background-color: #f0f7eb !important;  /*Light green */
+        opacity: 1 !important; 
         background-clip: border-box;
 
         border: 2px solid #b7d3c6;
+        border: 2px solid transparent;
         border-radius: 20px;
         box-shadow: 0 4px 10px rgba(157, 153, 153, 0.408);
         padding: 2em;
@@ -169,24 +170,24 @@
       const translations = {
         dutch: {
           content: `<span class="prayer-title">Het Gebed om Kalmte</span><br>
-God, geef me de kalmte<br>
+"God, geef me de kalmte<br>
 om te aanvaarden wat ik niet kan veranderen,<br>
 de moed om te veranderen wat ik kan veranderen,<br>
-en de wijsheid om het verschil te zien.`
+en de wijsheid om het verschil te zien."`
         },
         english: {
           content: `<span class="prayer-title">The Serenity Prayer</span><br>
-God, grant me the serenity<br>
+"God, grant me the serenity<br>
 to accept the things I cannot change,<br>
 the courage to change the things I can,<br>
-and the wisdom to know the difference.`
+and the wisdom to know the difference."`
         },
         german: {
           content: `<span class="prayer-title">Gelassenheitsgebet</span><br>
-Gott, gib mir die Gelassenheit,<br>
+"Gott, gib mir die Gelassenheit,<br>
 Dinge hinzunehmen, die ich nicht ändern kann,<br>
 den Mut, Dinge zu ändern, die ich ändern kann,<br>
-und die Weisheit, das eine vom anderen zu unterscheiden.`
+und die Weisheit, das eine vom anderen zu unterscheiden."`
         }
       };
 
@@ -202,6 +203,7 @@ und die Weisheit, das eine vom anderen zu unterscheiden.`
 
       // Set initial language
       setLanguage("dutch");
+      setLanguage("english");
     </script>
   </body>
 </html>
