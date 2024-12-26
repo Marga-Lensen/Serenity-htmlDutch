@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+html-versions
+images-B
+=======
 # Logs
 logs
 *.log
@@ -22,3 +26,4 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+>>>>>>> da52afb5dac6c2a260f503d22a3cb3f9b3af2f20
