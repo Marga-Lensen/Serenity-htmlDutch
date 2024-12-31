@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gebed om Kalmte</title>
+  <style>
+    body {
+      background-color: #5474a5;
+      font-family: "Palatino", serif;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .card {
+      background-image: url("./images/pawel.jpg");
+      background-size: cover;
+      background-position: center;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      padding: 2em;
+      text-align: center;
+      max-width: 90%;
+      width: 600px;
+      color: #fff;
+      color: aliceblue;
+      position: relative;
+    }
+
+    /* Semi-transparent overlay for readability */
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency */
+      z-index: 1;
+      border-radius: 15px;
+    }
+
+    .card > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1em;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 0.5em 0;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Het Gebed om Kalmte</h2>
+    <p>God, geef me de kalmte</p>
+    <p>om te aanvaarden wat ik niet kan veranderen,</p>
+    <p>de moed om te veranderen wat ik kan veranderen,</p>
+    <p>en de wijsheid om het verschil te zien.</p>
+  </div>
+</body>
+</html>
