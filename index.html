@@ -31,14 +31,16 @@
         position: relative; /* No fixed position */
         /* aus letzter Version copy 3:  */
         position: fixed; /* Keeps the card fixed on the background */
-        top: 35%; /* Center vertically */
+        top: 40%; /* Center vertically */
         left: 72%;
         right: 10%;
         transform: translate(-50%, -50%); /* Adjust position to center */
         /*  */
         color: #210202b6;
         
-       
+        background-color: rgba(240, 247, 235, 0.9); /* Semi-transparent */
+        background-color: rgba(182, 187, 187, 0.67); /* Semi-transparent */
+        /* aus letzter Version copy 3:  */
         background-color: #f0f7eb !important;  /*Light green */
         opacity: 1 !important; 
         background-clip: border-box;
@@ -47,12 +49,15 @@
         border: 2px solid transparent;
         border-radius: 20px;
         box-shadow: 0 4px 10px rgba(157, 153, 153, 0.408);
-        padding: 2em;
+        padding: 2.4em;
         text-align: center;
-        max-width: 600px;
+       
         width: 80%; /* Responsive scaling */
         width: 45vw;
-        max-height: 90%;
+        
+        max-width: 600px;
+        max-height: 90vh; /* Limit height for smaller screens */
+        overflow-y: auto; /* Add scroll for overflowing content */
       }
 
       /* Prayer Content */
@@ -202,7 +207,7 @@ und die Weisheit, das eine vom anderen zu unterscheiden."`
 
       // Set initial language
       setLanguage("dutch");
-      setLanguage("english");
+     
     </script>
   </body>
 </html>
