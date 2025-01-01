@@ -119,10 +119,7 @@
         .flag-buttons img {
           width: 30px; /* Smaller flags */
         }
-      }
-
-      /* Media Query for Extra Small Screens */
-      @media (max-height: 600px) {
+      
         body {
           /* align-items: flex-start; Push content higher */
           padding-top: 10px;
@@ -143,7 +140,17 @@
         #prayer-content {
           font-size: 1.2rem;
         }
+}
 
+      /* Media Query for Extra Small Screens */
+      @media (max-height: 600px) {
+        .prayer-title {
+          font-size: 1.2rem;
+        }
+
+        #prayer-content {
+          font-size: 1rem;
+        }
       }
     </style>
   </head>
