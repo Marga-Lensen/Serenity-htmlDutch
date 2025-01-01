@@ -49,7 +49,7 @@
         border: 2px solid transparent;
         border-radius: 20px;
         box-shadow: 0 4px 10px rgba(157, 153, 153, 0.408);
-        padding: 2.4em;
+        padding: 2em;
         text-align: center;
        
         width: 80%; /* Responsive scaling */
@@ -119,18 +119,18 @@
         .flag-buttons img {
           width: 30px; /* Smaller flags */
         }
-      
+      }
+
+      /* Media Query for Extra Small Screens */
+      @media (max-height: 600px) {
         body {
-          /* align-items: flex-start; Push content higher */
+          align-items: flex-start; /* Push content higher */
           padding-top: 10px;
-          max-height: 90%;
         }
         .card {
          margin-top: 40px; 
-         margin-right: 10vw;
-         width: 70%; /* Shrinks for smaller screens */
+         width: 90%; /* Shrinks for smaller screens */
           padding: 1.2em;
-          max-height: 90%;
         }
 
         .prayer-title {
@@ -140,17 +140,7 @@
         #prayer-content {
           font-size: 1.2rem;
         }
-}
 
-      /* Media Query for Extra Small Screens */
-      @media (max-height: 600px) {
-        .prayer-title {
-          font-size: 1.2rem;
-        }
-
-        #prayer-content {
-          font-size: 1rem;
-        }
       }
     </style>
   </head>
